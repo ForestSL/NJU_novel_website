@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>企业内部沟通后台管理</title>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+  	<script src="js/login.js"></script>
+   
+
+     
+ </head>
+ <body>
+
+    <div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">身份认证</h2>
+        <label for="inputId" class="sr-only" >ID</label>
+        <input type="ID" id="inputId" class="form-control" placeholder="ID" required autofocus >
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住ID
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="login" >
+        Log in
+        </button>
+       <script>
+        window.onload = function(){
+          
+          $("button#login").click(function(){
+            var id1=document.getElementById("inputId").value;
+            var pw=document.getElementById("inputPassword").value;
+          //    alert(id1+'\n'+pw+"\n");
+              
+              window.location.href="templates/homepage.html";
+              /*var data = new Object();
+
+              data.adminPhone="111";
+              data.adminPwd="111";
+              //var data = JSON.stringify(data); 
+              //alert(data)
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://115.159.38.100:3000/admin/login',
+                    data: data,
+                    success: function (data, textStatus){
+                        if(data == "success"){                      
+                        alert("登陆成功");
+                        window.location.href="templates/homepage.html";
+                        } else {
+
+                        alert("登陆失败");
+
+                        }
+
+                   }*/
+            })
+          }
+        </script>
+      </form>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
