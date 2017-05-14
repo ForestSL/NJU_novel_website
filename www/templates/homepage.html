@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -52,8 +52,107 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>美文区</h1>
-        <p class="lead">这里将呈现各类美文<br> 功能尚未实现，熬夜撸代码中</p>
+          <!--搜索框-->
+          <div id="box">
+              <input type="text" name="search" placeholder="请输入关键字">
+              <div id="select">
+              <select name="">
+                  <option value="0">按书名</option>
+                  <option value="1">按作者</option>
+              </select>
+          </div>
+              <div id="search">搜索</div>
+              <style type="text/css">
+                 #box {
+                      width: 500px;
+                      margin: 30px auto;
+                      font-family: 'Microsoft YaHei';
+                      font-size: 14px;
+                  }
+                  input {
+                      width: 300px;
+                      border: 1px solid #e2e2e2;
+                      height: 30px;
+                      float: left;
+                      background-image: url(images/search.jpg);
+                      background-repeat: no-repeat;
+                      background-size: 25px;
+                      background-position: 5px center;
+                      padding: 0 0 0 40px;
+                  }
+                  #select{
+                       width: 100px;
+                      height: 35px;
+                      float:right;
+                  }
+                  #search {
+                      width: 100px;
+                      height: 30px;
+                      float: right;
+                      background: black;
+                      color: white;
+                      text-align: center;
+                      line-height: 30px;
+                      cursor: pointer;
+                  }
+              </style>
+              <br/>
+          </div>
+
+          <!--美文推荐-->
+          <br/>
+          <h1>美文推荐</h1>
+          <table style="width: 1200px; height: 591px;" border="1">
+              <tbody>
+                  <tr>
+                      <td>
+                          <a href="file:///C:/Users/aviva/Desktop/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/webapp/www/books/1.txt">
+                              推
+                              荐书目一
+                          </a>
+                      </td>
+                      <td style="width: 300px;">
+                          <img title="book1" alt="" src="file:///C:/Users/aviva/Desktop/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/webapp/www/images/projects/project-1.png"><br>
+                      </td>
+                      <td style="width: 300px;">作者:A</td>
+                  </tr>
+                  <tr>
+                      <td>推荐书目二</td>
+                      <td>
+                          <img title="book2" alt="" src="file:///C:/Users/aviva/Desktop/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/webapp/www/images/projects/project-2.png"><br>
+                      </td>
+                      <td>作者:B</td>
+                  </tr>
+                  <tr>
+                      <td>推荐书目三</td>
+                      <td>
+                          <img title="book3" alt="" src="file:///C:/Users/aviva/Desktop/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/webapp/www/images/projects/project-4.png"><br>
+                      </td>
+                      <td>作者:C</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 570.917px;">推荐书目四</td>
+                      <td>
+                          <img title="book4" alt="" src="file:///C:/Users/aviva/Desktop/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/webapp/www/images/projects/project-5.png"><br>
+                      </td>
+                      <td>作者:D</td>
+                  </tr>
+                  <tr>
+                      <td>推荐书目五</td>
+                      <td>
+                          <br>
+                      </td>
+                      <td>作者:E</td>
+                  </tr>
+                  <tr>
+                      <td>推荐书目六</td>
+                      <td>
+                          <br>
+                      </td>
+                      <td>作者:F</td>
+                  </tr>
+              </tbody>
+          </table>
       </div>
 
     </div><!-- /.container -->
